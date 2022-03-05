@@ -52,7 +52,7 @@ em {
 .title {
   font-weight: 300;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .bg-dark {
@@ -65,9 +65,8 @@ em {
   color: black;
 }
 
-
 .bg-gray {
-background: #a8a8a8;
+  background: #a8a8a8;
   color: white;
 }
 
@@ -81,7 +80,7 @@ background: #a8a8a8;
 
 header {
   padding: 1rem 2rem;
-  background:#a8a8a8;
+  background: #a8a8a8;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -117,8 +116,8 @@ header {
 
 .icon_email {
   background: url("../images/icone-email.png");
-  height: 41px;
-  width: 43px;
+  height: 35px;
+  width: 40px;
   display: block;
 }
 
@@ -186,17 +185,17 @@ header a {
 
 .team-content-text h2 {
   margin-bottom: 2rem;
-  color : black;
+  color: black;
 }
 
 .team-content-text p {
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color : black;
+  color: black;
 }
 
 .team-content-img {
-  flex: 1;  
+  flex: 1;
   background: url(../images/numerique-responsable.jpg) center center/cover;
 }
 
@@ -232,7 +231,7 @@ header a {
 
 /* contact */
 .contact {
-  padding: 10rem 1rem 10rem 1rem;
+  padding: 8rem 1rem 8rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
