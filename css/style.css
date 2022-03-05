@@ -1,0 +1,251 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  color: #f1c40f;
+  font-weight: 400;
+}
+
+em {
+  color: #555;
+}
+
+/* class  */
+
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+.bg-white {
+  background: white;
+  color: black;
+}
+
+
+.bg-gray {
+background: #a8a8a8;
+  color: white;
+}
+
+/* vp + header */
+
+.vp-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem 2rem;
+  background:#a8a8a8;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height: 1.8rem;
+}
+
+.vp-logo {
+  margin-bottom: 0;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-logo i {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.vp-logo a {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.icon {
+  background: url("../images/ibex_logo.png");
+  height: 41px;
+  width: 43px;
+  display: block;
+}
+
+.icon_email {
+  background: url("../images/icone-email.png");
+  height: 41px;
+  width: 43px;
+  display: block;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  color: white;
+}
+
+header ul li {
+  padding: 1rem;
+}
+
+header ul li a:hover {
+  color: #f1c40f;
+}
+
+header a {
+  color: white;
+}
+
+.vp {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202355;
+}
+
+.vp-content {
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.vp-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.vp-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+/* team */
+.team {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.team-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-content-text h2 {
+  margin-bottom: 2rem;
+  color : black;
+}
+
+.team-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color : black;
+}
+
+.team-content-img {
+  flex: 1;  
+  background: url(../images/numerique-responsable.jpg) center center/cover;
+}
+
+/** valeurs */
+
+.valeurs {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.valeurs-content-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valeurs-content-img {
+  flex: 1;
+  background: url(../images/banniere.jpg) center center/cover;
+}
+
+.valeurs-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.valeurs-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+/* contact */
+.contact {
+  padding: 10rem 1rem 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  background: #444;
+  padding: 5rem 1rem 5rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
