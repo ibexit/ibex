@@ -118,7 +118,14 @@ header {
   background: url("../images/icone-email.png");
   height: 35px;
   width: 40px;
-  display: block;
+  display: inline-block;
+}
+
+.icon_linkedin {
+  background: url("../images/icone-linkedin.png");
+  height: 40px;
+  width: 40px;
+  display: inline-block;
 }
 
 header ul {
