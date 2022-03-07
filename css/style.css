@@ -116,7 +116,7 @@ header {
 
 .icon_email {
   background: url("../images/icone-email.png");
-  height: 35px;
+  height: 40px;
   width: 40px;
   display: inline-block;
 }
@@ -254,4 +254,10 @@ footer {
 
 footer p {
   margin-bottom: 0;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4px;
 }
