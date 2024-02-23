@@ -6,7 +6,7 @@ Librairie css utilisée : Tailwind CSS, nécessite compilation npm pour génére
 
 Pour lancer le site en mode dev :
 
-Ouvrir avec Visual Studio Code
-Installer l'extension Live Server sur l'IDE
-Exécuter la commande  npm run watch dans la console
-Cliquer sur "Go Live" en bas à droite de l'éditeur
+Ouvrir avec Visual Studio Code  
+Installer l'extension Live Server sur l'IDE  
+Exécuter la commande  npm run watch dans la console  
+Cliquer sur "Go Live" en bas à droite de l'éditeur  
