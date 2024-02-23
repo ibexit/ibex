@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.underline-green-gradient {
+    background-size:  100% 8%;
+    background-repeat: no-repeat;
+    background-position: left 0% bottom 0%;
+    background-image: linear-gradient(28deg, transparent 5%, #4a7edd 15%, #4a7edd 85%, transparent 95%);
+}

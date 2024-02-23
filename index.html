@@ -1,81 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/83f4286022.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      media="only screen and (max-width:500px)"
-      href="./css/style.mobile.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Long+Cang|Montserrat:300,400,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>IBEX</title>
-  </head>
-  <body>
-    <div class="vp-container">
-      <header>
-        <h2 class="vp-logo">
-          <i class="icon"></i>
-          <a href="#">IBEX</a>
-        </h2>
-        <ul>
-          <li>Une équipe engagée au service du numérique</li>
-        </ul>
-      </header>
-      <section class="vp">
-        <div class="vp-content">
-          <h1>
-            <strong>IBEX </strong>
-          </h1>
-          <h1>société de service informatique</h1>
-          <p>
-            Nous proposons différents profils : Développeur, Chef de projet,
-            Analyste qui sauront vous accompagner dans vos projets
-          </p>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/main.css" rel="stylesheet">
+  <title>Ibex IT - Freelancing engagé et responsable</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.png" class="h-16" alt="Logo Ibex">
+            </div>
+            <!-- Menu -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="#hero" class="hover:text-[#4a7edd]"> Accueil</a>
+                <a href="#valeurs" class="hover:text-[#4a7edd]"> Nos valeurs</a>
+                <a href="#green" class="hover:text-[#4a7edd]"> Notre engagement green</a>
+                <a href="#club-ibex" class="hover:text-[#4a7edd]"> Le club Ibex</a>
+                <a href="#contact" class="hover:text-[#4a7edd]"> Contactez-nous</a>
+            </div>
         </div>
-      </section>
-    </div>
-
-    <section id="team" class="team">
-      <div class="team-content-img"></div>
-      <div class="team-content-text">
-        <h2>Engagés pour un numérique responsable</h2>
-        <p>Certifiés auprès du collectif Green-IT,</p>
-      </div>
+    </nav>
+    <!-- Section 1 -->
+    <section id="hero" class="bg-hero-section bg-cover min-h-[80vh]">
+        <!-- Flex container -->
+        <div class="flex container flex-col-reverse mx-auto md:flex-row">
+            <!-- Partie gauche-->
+            <div class="flex flex-col p-6 md:w-1/2">
+                <h1 class=" text-4xl text-white font-bold mb-12 uppercase md:text-5xl">
+                    IBEX IT, <br>Prestation informatique <br> & freelancing <br>engagé et responsable
+                </h1>
+                <p class="max-w-sm text-xl text-white font-bold mb-6">
+                    Une équipe engagée au service du numérique
+                </p>
+                <p class="mx-w-sm text-lg text-white font-bold">
+                    Basés sur Orléans, nous sommes un collectif de freelances avec un large éventail d'expertises dans le domaine de l'informatique de gestion. 
+                </p>
+            </div>
+            <!-- Partie droite-->
+            <div class="flex flex-col p-6 md:w-1/2">
+            </div>
+        </div>
+    </section>
+    <!-- Section Valeurs -->
+    <section id="valeurs">
+        <!-- Flex container -->
+        <div class="flex container flex-col mx-auto mt-10">
+            <h2 class="text-3xl font-bold text-center uppercase">
+                <span class="underline-green-gradient">Ibex en Quelques Mots</span>
+            </h2>
+            <!--Présentation Ibex concise-->
+            <div class="flex flex-col mt-4 md:mt-0">
+                <p class="leading-relaxed p-8 mx-auto">
+                    Présents chez plusieurs grands comptes, nous apportons notre expertise dans les projets numériques <br> 
+                    Nous nous sommes construits autour des 3 axes suivants :
+                </p>
+            </div>
+            <!--Row Pictos Valeurs-->
+            <div class="flex flex-col md:flex-row md:mt-0 mb-8 space-y-8 md:space-y-0 p-8">
+                <div class="flex flex-row w-full md:w-1/3">
+                    <div class="bg-[#4a7edd] w-[4.5rem] h-[4.5rem] rounded-full flex justify-center items-center shrink-0 grow-0 mt-1">
+                        <img src="img/icon-implication.svg" alt="" class="h-10 mt-1">
+                    </div>
+                    <div class="flex flex-col mx-3">
+                        <h4 class="text-xl font-semibold leading-relaxed">Implication</h4>
+                        <p class="text-sm text-gray-600 leading-snug md:pr-4">
+                            L'implication chez Ibex, c'est comprendre les contraintes et les problématiques de nos clients.<br> 
+                            C'est motiver et mesurer l'intégration de nos collaborateurs et partenaires dans leurs projets.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full md:w-1/3">
+                    <div class="bg-[#4a7edd] w-[4.5rem] h-[4.5rem] rounded-full flex justify-center items-center shrink-0 grow-0">
+                        <img src="img/icon-competence.svg" alt="" class="h-10">
+                    </div>
+                    <div class="flex flex-col mx-3">
+                        <h4 class="text-xl font-semibold leading-relaxed">Compétence</h4>
+                        <p class="text-sm text-gray-600 leading-snug">
+                            Le réseau de connaissance est le coeur de la politique de recrutement chez Ibex.<br>
+                            Choisir Ibex c'est l'assurance d'un niveau de compétences vérifié par nos soins
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full md:w-1/3">
+                    <div class="bg-[#4a7edd] w-[4.5rem] h-[4.5rem] rounded-full flex justify-center items-center shrink-0 grow-0">
+                        <img src="img/icon-communication.svg" alt="" class="h-10">
+                    </div>
+                    <div class="flex flex-col mx-3">
+                        <h4 class="text-xl font-semibold leading-relaxed">Communication</h4>
+                        <p class="text-sm text-gray-600 leading-snug"> La communication entre nos clients, collaborateurs et partenaires</p>
+                    </div>
+                </div>
     </section>
 
-    <section id="valeurs" class="valeurs">
-      <div class="valeurs-content-img"></div>
-      <div class="valeurs-content-text bg-white">
-        <h2>Nos valeurs</h2>
-        <p>
-          Nos valeurs se reposent sur la transparence, l'implication et
-          l'accompagnement
-        </p>
-      </div>
+    <!-- Section Green -->
+    <section id="green" class="bg-green-section bg-cover bg-fixed">
+        <div class="flex container flex-row justify-end mx-auto mt-10 p-12">
+            <div class="flex flex-col w-1/3">
+                <h2 class="text-3xl text-white font-bold uppercase mb-6">
+                    Notre engagement green
+                </h2>
+                <p class="text-xl text-white font-bold max-w-sm">
+                    Conscients des enjeux environnementaux, <br>
+                    nous apportons notre expertise en matière de numérique responsable <br> 
+                    appuyée par les certifications du Collectif Green IT
+                </p>
+                <a href="#contact" class="text-base text-white font-bold border-2 border-solid border-white rounded-full p-3 mt-12 mb-6 w-fit">Faites appel à nous</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h5 class="title">Pour nous<strong> contacter</strong></h5>
-      <div class="icons-wrapper">
-        <a href="mailto:contact@ibex-it.fr"><i class="icon_email"></i></a>
-        <a href="https://www.linkedin.com/company/ibex-it/about/">
-          <i class="icon_linkedin"></i>
-        </a>
-      </div>
-      <p>contact@ibex-it.fr</p>
+    <!-- Section divers -->
+    <section id="divers">
+        <!-- Flex container -->
+        <div class="flex container flex-col mx-auto mt-10">
+            <h2 class="text-3xl font-bold text-center uppercase">
+                <span class="underline-green-gradient">Nos métiers</span>
+            </h2>
+            <!--Présentation Ibex concise-->
+            <div class="flex flex-col mt-4 md:mt-8">
+                <p class="leading-relaxed p-8 mx-auto">
+                    Chef de projet <br>
+                    Product Owner <br>
+                    Tech Lead <br> 
+                    Business Analyst <br>
+                    Scrum Master <br>
+                    Web Master <br>
+                    Concepteur Développeur 
+                </p>
+            </div>
+        </div>
     </section>
-    <footer>
-      <p>Copyright © 2022 IBEX, Inc.</p>
-    </footer>
-  </body>
+    
+    <!-- Section Club Ibex -->
+    <section id="club-ibex">
+        <div class="flex flex-row mx-auto">
+            <div class="flex flex-col w-2/5 p-6 md:pl-32 relative z-20">
+                <h2 class="text-3xl font-bold uppercase mb-6"> 
+                    <span class="underline-green-gradient">Le club Ibex</span>
+                </h2>
+                <p class="leading-relaxed mx-auto md:mt-5">
+                    Le club IBEX est un moment d'échange convivial entre freelances de la région Orléanaise.<br class="mb-2"> 
+                    Ce rendez-vous fait place à la détente où chacun fait part de ses difficultés et de ses réussites.<br class="mb-2"> 
+                    Cela donne l'opportunité d'échanger, autour d'un verre, puis d'élargir son réseau.
+                </p>
+            </div>
+            <div class="flex flex-col w-3/5 min-h-fit md:h-96 relative overflow-hidden">
+                <svg class="bg-transparent w-80 h-full absolute left-0 -translate-x-1/2 fill-white z-10" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 90,0 50,100 0,100"></polygon></svg>
+                <img class="h-auto z-0" src="/img/bg-club-ibex.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+        <!-- Section divers -->
+        <section id="divers">
+            <!-- Flex container -->
+            <div class="flex container flex-col mx-auto mt-10">
+                <h2 class="text-3xl font-bold text-center uppercase">
+                    <span class="underline-green-gradient">Nos Secteurs d'activité</span>
+                </h2>
+                <!--Présentation Ibex concise-->
+                <div class="flex flex-col mt-4 md:mt-8">
+                    <p class="leading-relaxed p-8 mx-auto">
+                        Banque & Assurance <br>
+                        Education Nationale <br>
+                        Caisse de retraite <br>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section Nous Contacter -->
+    <section id="contact" class="bg-[#F0F3F9] relative z-0">
+        <img src="/img/wavy-right-corner.svg" alt="" class="absolute top-0 right-0 z-10">
+        <img src="/img/wavy-left-corner.svg" alt="" class="absolute bottom-0 z-10">
+        <div class="flex container flex-col mx-auto py-6 space-y-6">
+            <h2 class="text-3xl font-bold text-center"> 
+                <span class="underline-green-gradient">Vous souhaitez nous contacter</span>
+            </h2>
+            <div class="flex flex-col-reverse md:flex-row space-y-6 md:space-y-0">
+                <!-- Colonne Infos de contact -->
+                <div class="flex flex-col md:w-1/3 bg-white p-12 mx-10 rounded shadow-sm z-20">
+                    <div class="flex flex-col mb-6">
+                        <h4 class="text-xl text-gray-800">Par Email</h4>
+                        <p class="text-gray-500">contact@ibexit.fr</p>
+                    </div>
+                    <div class="flex flex-col mb-6">
+                        <h4 class="text-xl text-gray-800">Par Téléphone</h4>
+                        <p class="text-gray-500">01 25 64 89 78</p>
+                    </div>
+                    <div class="flex flex-col mb-6">
+                        <h4 class="text-xl text-gray-800">Par Courrier</h4>
+                        <p class="text-gray-500">5 allée du petit pont, 45 000 Orléans</p>
+                    </div>
+                    <div class="flex flex-col mt-8">
+                        <div class="pt-2 border-t border-solid border-slate-400 "></div>
+                        <h4 class="text-xl text-gray-800">Réseaux Sociaux</h4>
+                        <p class="text-gray-500"></p>
+                    </div>
+
+                </div>
+                <!-- Formulaire de contact email -->
+                <div class="flex flex-col md:w-2/3 mx-10 md:mx-0 z-20">
+                    <form action="mailto:sadiez.matheo@gmail.com" class="flex flex-col justify-center p-4 bg-white">
+                        <div class="flex flex-col md:flex-row md:mb-6 md:space-x-4">
+                            <div class="flex flex-col w-1/2">
+                                <label for="nom" class="mb-1">Nom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Nom" class="py-2 px-4 border border-slate-400 rounded">                        
+                            </div>
+                            <div class="flex flex-col w-1/2">
+                                <label for="email" class="mb-1">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Email" class="py-2 px-4 border border-slate-400 rounded">                        
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mb-6 md:space-x-4">
+                            <div class="flex flex-col w-1/2">
+                                <label for="tel" class="mb-1">Téléphone</label>
+                                <input type="text" id="tel" name="tel" placeholder="06 82 34 56 38" class="py-2 px-4 border border-slate-400 rounded">                        
+                            </div>
+                            <div class="flex flex-col w-1/2">
+                                <label for="objet" class="mb-1">Objet</label>
+                                <input type="text" id="objet" name="objet" placeholder="Votre besoin" class="py-2 px-4 border border-slate-400 rounded">                        
+                            </div>
+                        </div>
+                        <div class="flex flex-col mb-6">
+                            <label for="message" class="mb-1">Message</label>
+                            <textarea name="message" id="message" rows="4" class="py-2 px-4 border border-slate-400 rounded"></textarea>
+                        </div>
+                        <button class="py-3 px-12 border-2 border-gray-400 hover:border-gray-700 rounded-full self-end mb-4" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <section id="footer">
+        <div class="flex container flex-col mx-auto md:mt-10 mb-10 px-4 md:px-0">
+            <div class="mt-14">&nbsp;</div>
+            <div class="pt-2 border-t border-solid border-slate-300 "></div>
+            <div class="flex flex-row justify-between mt-1 mb-8">
+                <p class="text-sm text-gray-400">IBEX IT © 2024</p>
+                <a href="#" class="text-sm text-gray-400 hover:text-gray-500">Mentions Légales</a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
