@@ -9,15 +9,17 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="relative container mx-auto p-6">
+    <nav class="sticky top-0 bg-white pr-12 mx-auto shadow-md z-50">
         <!-- Flex container -->
         <div class="flex items-center justify-between">
             <!-- Logo -->
-            <div class="pt-2">
-                <img src="img/logo.png" class="h-16" alt="Logo Ibex">
+            <div class="">
+                <a href="#hero"> 
+                    <img src="img/logo_banniere.png" class="h-[4.5rem]" alt="Logo Ibex">
+                </a>
             </div>
             <!-- Menu -->
-            <div class="hidden space-x-6 md:flex">
+            <div class="hidden py-6 space-x-6 md:flex">
                 <a href="#hero" class="hover:text-[#4a7edd]"> Accueil</a>
                 <a href="#valeurs" class="hover:text-[#4a7edd]"> Nos valeurs</a>
                 <a href="#green" class="hover:text-[#4a7edd]"> Notre engagement green</a>
@@ -96,6 +98,8 @@
                         <p class="text-sm text-gray-600 leading-snug"> La communication entre nos clients, collaborateurs et partenaires</p>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section Green -->
@@ -115,8 +119,8 @@
         </div>
     </section>
 
-    <!-- Section divers -->
-    <section id="divers">
+    <!-- Section Nos Metiers -->
+    <section id="metiers">
         <!-- Flex container -->
         <div class="flex container flex-col mx-auto mt-10">
             <h2 class="text-3xl font-bold text-center uppercase">
@@ -129,16 +133,16 @@
                     Product Owner <br>
                     Tech Lead <br> 
                     Business Analyst <br>
+                    Concepteur Développeur <br> 
                     Scrum Master <br>
                     Web Master <br>
-                    Concepteur Développeur 
                 </p>
             </div>
         </div>
     </section>
     
     <!-- Section Club Ibex -->
-    <section id="club-ibex">
+    <section id="club-ibex" class="border-t border-b border-solid border-slate-300">
         <div class="flex flex-row mx-auto">
             <div class="flex flex-col w-2/5 p-6 md:pl-32 relative z-20">
                 <h2 class="text-3xl font-bold uppercase mb-6"> 
@@ -157,24 +161,27 @@
         </div>
     </section>
 
-        <!-- Section divers -->
-        <section id="divers">
-            <!-- Flex container -->
-            <div class="flex container flex-col mx-auto mt-10">
-                <h2 class="text-3xl font-bold text-center uppercase">
-                    <span class="underline-green-gradient">Nos Secteurs d'activité</span>
-                </h2>
-                <!--Présentation Ibex concise-->
-                <div class="flex flex-col mt-4 md:mt-8">
-                    <p class="leading-relaxed p-8 mx-auto">
-                        Banque & Assurance <br>
-                        Education Nationale <br>
-                        Caisse de retraite <br>
-                        
-                    </p>
-                </div>
+    <!-- Section Nos Secteurs d'ctivité -->
+    <section id="secteurs-activites">
+        <!-- Flex container -->
+        <div class="flex container flex-col mx-auto mt-10">
+            <h2 class="text-3xl font-bold text-center uppercase">
+                <span class="underline-green-gradient">Nos Secteurs d'activité</span>
+            </h2>
+            <!--Row Nos Secteurs d'Activité-->
+            <div class="flex flex-row mt-4 md:mt-8">
+                <p class="leading-relaxed p-8 mx-auto">
+                    Banque & Assurance <br>                    
+                </p>
+                <p class="leading-relaxed p-8 mx-auto">
+                    Education Nationale <br>                    
+                </p>
+                <p class="leading-relaxed p-8 mx-auto">
+                    Caisse de retraite <br>
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Section Nous Contacter -->
     <section id="contact" class="bg-[#F0F3F9] relative z-0">
@@ -244,7 +251,7 @@
     <section id="footer">
         <div class="flex container flex-col mx-auto md:mt-10 mb-10 px-4 md:px-0">
             <div class="mt-14">&nbsp;</div>
-            <div class="pt-2 border-t border-solid border-slate-300 "></div>
+            <div class="pt-2 border-t border-solid border-slate-300"></div>
             <div class="flex flex-row justify-between mt-1 mb-8">
                 <p class="text-sm text-gray-400">IBEX IT © 2024</p>
                 <a href="#" class="text-sm text-gray-400 hover:text-gray-500">Mentions Légales</a>

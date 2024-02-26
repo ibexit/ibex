@@ -6,6 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    scroll-margin-top: 4.5rem;
+}
+
 .underline-green-gradient {
     background-size:  100% 8%;
     background-repeat: no-repeat;
