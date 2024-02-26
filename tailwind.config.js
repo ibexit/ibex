@@ -10,6 +10,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        'primaryBlue': '#4a7edd',
+        'darkBlue': '#18233f',
+        'lightBlue': '#f0f5fc',
+        'mediumGray': '#F0F3F9'
         
       },
       backgroundImage: {
