@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/main.css" rel="stylesheet">
-  <title>Ibex IT - Prestation informatique & Freelancing engagé</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Ibex IT - Prestation informatique & Freelancing engagé</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "zBSZdMZlhSJm8fIww",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('formulaire-contact').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // IDs publics du formulaire et du template configurés sur EMailJS
+                emailjs.sendForm('service_9h3nw98', 'template_c2f3fyw', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -238,7 +260,7 @@
                 </div>
                 <!-- Formulaire de contact email -->
                 <div class="flex flex-col md:w-2/3 mx-10 md:mx-0 z-20">
-                    <form action="mailto:sadiez.matheo@gmail.com" class="flex flex-col justify-center p-4 bg-white">
+                    <form id="formulaire-contact" class="flex flex-col justify-center p-4 bg-white">
                         <div class="flex flex-col md:flex-row md:mb-6 md:space-x-4">
                             <div class="flex flex-col md:w-1/2">
                                 <label for="nom" class="mb-1">Nom</label>
