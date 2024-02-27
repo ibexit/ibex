@@ -30,23 +30,29 @@
     </nav>
     
     <!-- Section 1 -->
-    <section id="hero" class="bg-hero-section bg-contain bg-no-repeat md:bg-cover md:min-h-[80vh]">
+    <section id="hero" class="md:bg-hero-section bg-contain bg-no-repeat md:bg-cover md:min-h-[80vh]">
         <!-- Flex container -->
         <div class="flex container flex-col mx-auto md:flex-row">
             <!-- Partie gauche-->
-            <div class="flex flex-col p-2 md:p-6 pt-4 md:pt-6 md:w-1/2">
-                <h1 class="text-3xl text-white font-bold mb-6 md:mb-12 uppercase md:text-5xl">
+            <div class="flex flex-col p-2 md:p-6 pt-0 md:pt-6 md:w-1/2 relative bg-hero-section md:bg-none bg-contain bg-no-repeat min-h-[50vw] md:min-h-0 ">
+                <h1 class="text-2xl min-[374px]:text-3xl text-white font-bold md:mb-12 uppercase md:text-5xl absolute bottom-1 md:relative md:bottom-auto">
                     IBEX IT, <br>Prestation informatique <br> & freelancing engagé
                 </h1>
-                <h3 class="md:max-w-sm text-xl text-gray-700 md:text-white font-bold mb-6">
+                <h3 class="hidden md:block md:max-w-sm text-xl text-gray-700 md:text-white font-bold mb-6">
                     Une équipe engagée au service du numérique
                 </h3>
-                <p class="mx-w-sm text-lg text-gray-700 md:text-white font-bold">
+                <p class="hidden md:block mx-w-sm text-lg text-gray-700 md:text-white font-bold">
                     Basés sur Orléans, nous sommes un collectif de freelances avec un large éventail d'expertises dans le domaine de l'informatique de gestion. 
                 </p>
             </div>
             <!-- Partie droite-->
-            <div class="hidden md:flex flex-col p-6 w-0 md:w-1/2">
+            <div class="flex flex-col p-2 pt-0 md:w-1/2">
+                <h3 class="md:hidden md:max-w-sm text-xl text-gray-700 md:text-white font-bold mb-4">
+                    Une équipe engagée au service du numérique
+                </h3>
+                <p class="md:hidden mx-w-sm text-lg text-gray-700 md:text-white font-bold">
+                    Basés sur Orléans, nous sommes un collectif de freelances avec un large éventail d'expertises dans le domaine de l'informatique de gestion. 
+                </p>
             </div>
             <div class="md:hidden pt-2 border-t border-solid border-slate-300"></div>
         </div>
