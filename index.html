@@ -128,23 +128,32 @@
             <h2 class="text-3xl font-bold text-center uppercase">
                 <span class="underline-gradient">Nos métiers</span>
             </h2>
-            <!--Présentation Ibex concise-->
-            <div class="flex flex-col mt-4 md:mt-8">
-                <p class="leading-relaxed p-8 mx-auto">
-                    Chef de projet <br>
-                    Product Owner <br>
-                    Tech Lead <br> 
-                    Business Analyst <br>
-                    Concepteur Développeur <br> 
-                    Scrum Master <br>
-                    Web Master <br>
-                </p>
+            <!--Row Nos Métiers-->
+            <div class="flex flex-col md:grid md:grid-cols-3 w-4/5 md:w-fit mx-auto mt-8 md:mt-12 mb-4 gap-y-3 md:gap-y-4 gap-x-20">
+                    <div class="bg-lightBlue w-full md:w-60 p-4 shadow-sm border-l-4 border-solid border-yellow-500 md:order-1">
+                        <h3 class="uppercase text-sm font-bold">Chef de projet</h3>
+                    </div>
+                    <div class="bg-lightBlue wll md:w-60 p-4 shadow-sm border-l-4 border-solid border-yellow-500 md:order-4">
+                        <h3 class="uppercase text-sm font-bold">Scrum Master</h3>
+                    </div>
+                    <div class="bg-lightBlue w-full md:w-60 p-4 shadow-sm border-l-4 border-solid border-green-600 md:order-2">
+                        <h3 class="uppercase text-sm font-bold">Product Owner</h3>
+                    </div>
+                    <div class="bg-lightBlue w-full md:w-60 p-4 shadow-sm border-l-4 border-solid border-green-600 md:order-5">
+                        <h3 class="uppercase text-sm font-bold">Business Analyst</h3>
+                    </div>
+                    <div class="bg-lightBlue w-full md:w-60 p-4 shadow-sm border-l-4 border-solid border-primaryBlue md:order-3">
+                        <h3 class="uppercase text-sm font-bold">Tech Lead</h3>
+                    </div>
+                    <div class="bg-lightBlue w-full md:w-60 p-4 shadow-sm border-l-4 border-solid border-primaryBlue md:order-6">
+                        <h3 class="uppercase text-sm font-bold">Concepteur Développeur</h3>
+                    </div>
             </div>
         </div>
     </section>
     
     <!-- Section Club Ibex -->
-    <section id="club-ibex" class="border-t border-b border-solid border-slate-300">
+    <section id="club-ibex" class="border-t border-b border-solid border-slate-300 mt-10">
         <div class="flex flex-col md:flex-row mx-auto">
             <div class="flex flex-col md:w-2/5 p-6 md:pl-32 relative z-20">
                 <h2 class="text-3xl font-bold uppercase mb-6"> 
@@ -225,17 +234,17 @@
                 <div class="flex flex-col md:w-2/3 mx-10 md:mx-0 z-20">
                     <form action="mailto:sadiez.matheo@gmail.com" class="flex flex-col justify-center p-4 bg-white">
                         <div class="flex flex-col md:flex-row md:mb-6 md:space-x-4">
-                            <div class="flex flex-col w-1/2">
+                            <div class="flex flex-col md:w-1/2">
                                 <label for="nom" class="mb-1">Nom</label>
                                 <input type="text" id="nom" name="nom" placeholder="Nom" class="py-2 px-4 border border-slate-400 rounded">                        
                             </div>
-                            <div class="flex flex-col w-1/2">
+                            <div class="flex flex-col md:w-1/2">
                                 <label for="email" class="mb-1">Email</label>
                                 <input type="text" id="email" name="email" placeholder="Email" class="py-2 px-4 border border-slate-400 rounded">                        
                             </div>
                         </div>
                         <div class="flex flex-col md:flex-row mb-6 md:space-x-4">
-                            <div class="flex flex-col w-1/2">
+                            <div class="flex flex-col md:w-1/2">
                                 <label for="tel" class="mb-1">Téléphone</label>
                                 <input type="text" id="tel" name="tel" placeholder="06 82 34 56 38" class="py-2 px-4 border border-slate-400 rounded">                        
                             </div>
