@@ -19,6 +19,7 @@ module.exports = {
       backgroundImage: {
         'hero-section': "url('/img/bg-hero-section.jpg')",
         'green-section': "url('/img/bg-green-section.jpg')",
+        'green-section-mobile': "url('/img/bg-green-section-mobile.jpg')",
       }
     },
   },
