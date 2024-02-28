@@ -31,9 +31,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="sticky top-0 bg-white pr-12 mx-auto shadow-md z-50">
+    <nav class="sticky top-0 bg-darkBlue md:bg-white pr-12 mx-auto shadow-md z-50">
         <!-- Flex container -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between w-[92vw] md:w-auto">
             <!-- Logo -->
             <div class="">
                 <a href="#hero"> 
@@ -42,6 +42,24 @@
             </div>
             <!-- Menu -->
             <div class="hidden py-6 space-x-6 md:flex">
+                <a href="#hero" class="hover:text-primaryBlue"> Accueil</a>
+                <a href="#valeurs" class="hover:text-primaryBlue"> Nos valeurs</a>
+                <a href="#green" class="hover:text-primaryBlue"> Notre engagement green</a>
+                <a href="#club-ibex" class="hover:text-primaryBlue"> Le club Ibex</a>
+                <a href="#contact" class="hover:text-primaryBlue"> Contactez-nous</a>
+            </div>
+
+            <!--Bouton Hamburger-->
+            <button id="menu-btn" class="block hamburger md:hidden">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--Menu Mobile-->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center py-8 space-y-6 font-bold w-full bg-white drop-shadow-md">
                 <a href="#hero" class="hover:text-primaryBlue"> Accueil</a>
                 <a href="#valeurs" class="hover:text-primaryBlue"> Nos valeurs</a>
                 <a href="#green" class="hover:text-primaryBlue"> Notre engagement green</a>
@@ -299,5 +317,8 @@
             </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
