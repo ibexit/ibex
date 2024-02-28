@@ -13,6 +13,7 @@ module.exports = {
         'primaryBlue': '#4a7edd',
         'darkBlue': '#1E2E54',
         'lightBlue': '#f0f5fc',
+        'ibexGold': '#C0930D',
         'mediumGray': '#F0F3F9'
         
       },

@@ -31,7 +31,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="sticky top-0 bg-darkBlue md:bg-white pr-12 mx-auto shadow-md z-50">
+    <nav class="sticky top-0 bg-darkBlue md:bg-darkBlue pr-12 mx-auto shadow-md z-50">
         <!-- Flex container -->
         <div class="flex items-center justify-between w-[92vw] md:w-auto">
             <!-- Logo -->
@@ -41,12 +41,12 @@
                 </a>
             </div>
             <!-- Menu -->
-            <div class="hidden py-6 space-x-6 md:flex">
-                <a href="#hero" class="hover:text-primaryBlue"> Accueil</a>
-                <a href="#valeurs" class="hover:text-primaryBlue"> Nos valeurs</a>
-                <a href="#green" class="hover:text-primaryBlue"> Notre engagement green</a>
-                <a href="#club-ibex" class="hover:text-primaryBlue"> Le club Ibex</a>
-                <a href="#contact" class="hover:text-primaryBlue"> Contactez-nous</a>
+            <div class="hidden py-6 space-x-6 md:flex text-white">
+                <a href="#hero" class="hover:text-ibexGold"> Accueil</a>
+                <a href="#valeurs" class="hover:text-ibexGold"> Nos valeurs</a>
+                <a href="#green" class="hover:text-ibexGold"> Notre engagement green</a>
+                <a href="#club-ibex" class="hover:text-ibexGold"> Le club Ibex</a>
+                <a href="#contact" class="hover:text-ibexGold"> Contactez-nous</a>
             </div>
 
             <!--Bouton Hamburger-->
@@ -70,12 +70,12 @@
     </nav>
     
     <!-- Section 1 -->
-    <section id="hero" class="md:bg-hero-section bg-contain bg-no-repeat md:bg-cover md:min-h-[80vh]">
+    <section id="hero" class="md:bg-hero-section bg-contain bg-no-repeat md:bg-cover min-h-[75vh] md:min-h-[80vh] ">
         <!-- Flex container -->
         <div class="flex container flex-col mx-auto md:flex-row">
             <!-- Partie gauche-->
             <div class="flex flex-col p-2 md:p-6 pt-0 md:pt-6 md:w-1/2 relative bg-hero-section md:bg-none bg-contain bg-no-repeat min-h-[50vw] md:min-h-0 ">
-                <h1 class="text-2xl min-[374px]:text-3xl text-white font-bold md:mb-12 uppercase md:text-5xl absolute bottom-1 md:relative md:bottom-auto">
+                <h1 class="hidden md:block text-2xl min-[374px]:text-3xl text-white font-bold md:mb-12 uppercase md:text-5xl absolute bottom-1 md:relative md:bottom-auto">
                     IBEX IT, <br>Prestation informatique <br> & freelancing engagé
                 </h1>
                 <h3 class="hidden md:block md:max-w-sm text-xl text-gray-700 md:text-white font-bold mb-6">
@@ -86,27 +86,27 @@
                 </p>
             </div>
             <!-- Partie droite-->
-            <div class="flex flex-col p-2 pt-0 md:w-1/2">
-                <h3 class="md:hidden md:max-w-sm text-xl text-gray-700 md:text-white font-bold mb-4">
-                    Une équipe engagée au service du numérique
-                </h3>
-                <p class="md:hidden mx-w-sm text-lg text-gray-700 md:text-white font-bold">
+            <div class="flex flex-col p-2 pt-0 w-4/5 md:w-1/2 mx-auto md:mx-0 text-center">
+                <h2 class="md:hidden text-xl text-ibexGold bg-darkBlue rounded-xl font-bold -translate-y-1/2 py-1 pb-2 shadow-xl z-10">
+                    Prestation informatique <br> & freelancing engagé
+                </h2>
+                <p class="md:hidden mx-w-sm text-lg text-gray-700 md:text-white font-bold mb-8">
                     Basés sur Orléans, nous sommes un collectif de freelances avec un large éventail d'expertises dans le domaine de l'informatique de gestion. 
                 </p>
             </div>
-            <div class="md:hidden pt-2 border-t border-solid border-slate-300"></div>
+            <div class="md:hidden mt-8 pt-2 border-t border-solid border-slate-300"></div>
         </div>
     </section>
     <!-- Section Valeurs -->
     <section id="valeurs">
         <!-- Flex container -->
         <div class="flex container flex-col mx-auto mt-10">
-            <h2 class="text-3xl font-bold text-center uppercase">
+            <h2 class="text-3xl font-bold text-center uppercase w-4/5 mx-auto md:w-auto">
                 <span class="underline-gradient">Ibex en Quelques Mots</span>
             </h2>
             <!--Présentation Ibex concise-->
             <div class="flex flex-col mt-4 md:mt-0">
-                <p class="leading-relaxed p-8 mx-auto">
+                <p class="text-center md:text-left leading-relaxed p-8 mx-auto">
                     Présents chez plusieurs grands comptes Orléanais, nous apportons notre expertise dans les projets numériques. <br> 
                     Nous nous sommes construits autour des 3 axes suivants :
                 </p>
@@ -299,7 +299,7 @@
                             <label for="message" class="mb-1">Message</label>
                             <textarea name="message" id="message" rows="4" class="py-2 px-4 border border-slate-400 rounded"></textarea>
                         </div>
-                        <button class="py-3 px-12 border-2 border-gray-400 hover:border-gray-700 rounded-full self-end mb-4" type="submit">Envoyer</button>
+                        <button class="py-3 px-12 border-2 bg-darkBlue text-white border-gray-400 hover:border-gray-700 rounded-full self-end mb-4" type="submit">Envoyer</button>
                     </form>
                 </div>
             </div>
