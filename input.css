@@ -60,3 +60,11 @@ section{
 #menu.open{
     transform: scaleY(1);
 }
+
+/* Surbrillance bleu au survol pour liens des réseaux sociaux*/
+.img-link{
+    filter: invert(52%) sepia(54%) saturate(4300%) hue-rotate(202deg) brightness(92%) contrast(87%);
+}
+.img-link:hover{
+    filter: invert(69%) sepia(77%) saturate(1732%) hue-rotate(4deg) brightness(83%) contrast(90%);
+}
