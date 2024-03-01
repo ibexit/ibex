@@ -68,3 +68,25 @@ section{
 .img-link:hover{
     filter: invert(69%) sepia(77%) saturate(1732%) hue-rotate(4deg) brightness(83%) contrast(90%);
 }
+
+.message-confirmation{
+    width: 100%;
+    position : relative;
+    margin-bottom:60px ;
+    display: flex;
+    justify-content: right;
+}
+
+.message-confirmation .success{
+    font-size: 20px;
+    color : green;
+    position: absolute;
+    display: none;
+}
+
+.message-confirmation .danger{
+    font-size: 20px;
+    color : red;
+    position: absolute;
+    display: none;
+}

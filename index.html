@@ -18,13 +18,43 @@
         window.onload = function() {
             document.getElementById('formulaire-contact').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // IDs publics du formulaire et du template configurés sur EMailJS
-                emailjs.sendForm('service_85fkgy8', 'template_ve9tnu1', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+
+                // message suite à la soumission du formulaire
+                const success = document.getElementById('success');
+                const danger = document.getElementById('danger');
+
+                // variables du formulaire de saisie
+                var name= document.getElementById('nom');
+                var email = document.getElementById('email');
+                var message = document.getElementById('message');
+                var tel = document.getElementById('tel');
+
+                // contrôle des différentes valeurs des champs du formulaire
+                if(name.value === '' || email.value === '' || message.value ==='' || tel.value === ''){
+                    // message avertissant que les informations sont manquantes
+                    danger.style.display = 'block';
+                    success.style.display = 'none';
+                 }else{    
+                    danger.style.display = 'none';
+                    success.style.display = 'block';
+
+                    // IDs publics du formulaire et du template configurés sur EMailJS
+                    emailjs.sendForm('service_85fkgy8', 'template_ve9tnu1', this)
+                        .then(() => {
+                            console.log('SUCCESS!');  
+                            setTimeout(()=>{
+                                // reinitialisation des champs du formulaire à vide
+                                name.value='';
+                                email.value='';
+                                message.value='';
+                                tel.value='';
+                            }, 500);                        
+                        
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                    }
+
             });
         }
     </script>
@@ -302,6 +332,10 @@
                             <textarea name="message" id="message" rows="4" class="py-2 px-4 border border-slate-400 rounded"></textarea>
                         </div>
                         <button class="py-3 px-12 border-2 bg-darkBlue text-white border-gray-400 hover:border-gray-700 rounded-full self-end mb-4" type="submit">Envoyer</button>
+                        <div class="message-confirmation">
+                            <div class="success" id='success'>Message envoyé</div>
+                            <div class="danger" id='danger'>Informations manquantes</div>
+                        </div>
                     </form>
                 </div>
             </div>
